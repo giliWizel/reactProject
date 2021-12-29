@@ -23,7 +23,6 @@ function App() {
       {/* <Register></Register> */}
       <Router>
         <HomeRouter></HomeRouter>
-        <Login></Login>
       </Router>
       {/* <RegisterWorker></RegisterWorker> */}
     </div>

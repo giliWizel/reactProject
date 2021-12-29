@@ -16,6 +16,7 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { connect } from 'react-redux'
 import { actionsStore } from '../../../redux/actions/actions'
 import { SettingsBackupRestoreOutlined } from '@mui/icons-material';
+import Home from '../WorkerRouter'
 
 import './proposalsForApproval.css'
 function mapStateToProps(state) {
@@ -59,6 +60,7 @@ function Row(props) {
         //         })
     }
     return (
+        <>
         <React.Fragment>
             <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
                 <TableCell component="th" align="right">
@@ -91,7 +93,7 @@ function Row(props) {
                     </Collapse>
                 </TableCell>
             </TableRow>
-        </React.Fragment >
+        </React.Fragment >  </>
     );
 }
 
@@ -135,6 +137,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(function ProposalsFo
 
     return (
         <>
+        <Home></Home>
             <h1>הצעות עבודה לאישור</h1>
             <TableContainer component={Paper}>
                 <Table aria-label="collapsible table">

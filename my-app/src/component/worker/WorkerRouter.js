@@ -9,12 +9,7 @@ export default function WorkerRouter() {
     return (
         <div>
             <Menu />
-            <Routes>
-                <Route path="/details" element={<Details />}></Route>
-                <Route path="/proposalsForApproval" element={<ProposalsForApproval />}></Route>
-                <Route path="/schedule" element={<CalendarWorker />}></Route>
-                <Route path="/feedback" element={<Feedback />}></Route>
-            </Routes>
+          
         </div>
     )
 }
@@ -41,7 +36,7 @@ function Menu() {
                                 <Link className="nav-link" to="/schedule">לוח זמנים</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link className="nav-link" to="/feedback">משוב למערכת</Link>
+                                <Link className="nav-link" to="/feedbackWorker">משוב למערכת</Link>
                             </li>
 
                         </ul>

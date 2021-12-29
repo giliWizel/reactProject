@@ -1,6 +1,7 @@
 import React, { useState, createRef } from 'react'
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import Home from '../WorkerRouter'
 
 export default function Feedback(props) {
     const [value, setValue] = useState("");
@@ -27,6 +28,10 @@ export default function Feedback(props) {
         ]
     }
     return (
+        <>
+                <Home></Home>
+
+    
         <div className="container">
             <br /><br />
             <div className="row">
@@ -41,6 +46,6 @@ export default function Feedback(props) {
                     <button className="btn btn-primary" onClick={sendEmail}>שליחה</button>
                 </div>
             </div >
-        </div >
+        </div >    </>
     )
 }

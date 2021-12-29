@@ -24,6 +24,9 @@ export default function Home(props) {
                             <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="/feedback"> משוב למערכת</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" to="/JobApplication"> בקשת עבודה</Link>
+                            </li>
 
                         </ul>
                     </div>

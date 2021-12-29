@@ -6,7 +6,7 @@ import { Modal } from 'react-bootstrap';
 import { connect } from 'react-redux'
 import { actionsStore } from '../../../redux/actions/actions'
 import Http from '../../../config/axios'
-
+import Home from '../WorkerRouter'
 function mapStateToProps(state) {
     return {
         user: state.users
@@ -359,6 +359,7 @@ export default connect(mapStateToProps)(function CalendarWorker(props) {
     //         })
     // }, [])
     return <div>
+        <Home></Home>
         <h1>לוח זמנים</h1>
         <Eventcalendar
             locale={locale['he']}

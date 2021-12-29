@@ -1,6 +1,8 @@
 import React, { createRef, useState } from "react";
 import { connect } from 'react-redux'
 import { actionsStore } from '../../../redux/actions/actions'
+import Home from '../WorkerRouter'
+
 function mapStateToProps(state) {
     return {
         user: state.users
@@ -112,7 +114,11 @@ export default connect(mapStateToProps, mapDispatchToProps)(function Details(pro
 
     }
 
+
     return (
+        <>
+                <Home></Home>
+     
         <div className="container">
             <div className="row">
                 <div className="col-3">
@@ -182,7 +188,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(function Details(pro
 
             </div >
 
-        </div >
+        </div >   </>
 
 
 

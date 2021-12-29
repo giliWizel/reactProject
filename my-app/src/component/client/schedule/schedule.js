@@ -6,6 +6,7 @@ import { Modal } from 'react-bootstrap';
 import { connect } from 'react-redux'
 import { actionsStore } from '../../../redux/actions/actions'
 import Http from '../../../config/axios'
+import Home from '../home'
 
 function mapStateToProps(state) {
     return {
@@ -364,6 +365,8 @@ export default connect(mapStateToProps, mapDispatchToProps)(function CalendarCli
     //         })
     // }, [])
     return <div>
+                <Home></Home>
+
         <h1>לוח זמנים</h1>
         <Eventcalendar
             locale={locale['he']}
